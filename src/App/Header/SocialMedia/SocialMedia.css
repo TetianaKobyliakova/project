@@ -1,0 +1,29 @@
+.social-media {
+	
+	display: flex;
+	justify-content: space-between;
+	width: 244px;
+	
+}
+
+
+
+.facebook a:after {
+	content: url(f.png);
+}
+.whatsapp a:after {
+	content: url(wh.png);
+}
+.instagram a:after {
+	content: url(in.png);
+}
+
+.twitter a:after {
+	content: url(tw.png);
+}
+
+@media(max-width: 768px) {
+    .social-media{
+        display: none;
+    }
+}
