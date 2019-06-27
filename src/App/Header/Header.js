@@ -10,10 +10,10 @@ const Header = () => {
     <header className="header">
 		<div className="container">
 			<div className="header-flex-row">
-                <div class="col-for-logo">
+                <div className="col-for-logo">
                     <Logo />
                 </div>
-				<div class="col-for-social-media">
+				<div className="col-for-social-media">
                     <SocialMedia />
                     <VerticalMenu />
                 </div>	 

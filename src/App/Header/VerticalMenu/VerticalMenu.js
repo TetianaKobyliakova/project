@@ -4,7 +4,7 @@ import './VerticalMenu.css'
 const VerticalMenu = () => {
     return(
         <nav className="vertical-menu">
-            <label for="hamburger"></label>
+            <label htmlFor="hamburger"></label>
                 <input type="checkbox" id="hamburger"/>
                 
             <ul>
