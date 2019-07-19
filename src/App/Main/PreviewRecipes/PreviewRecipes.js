@@ -4,16 +4,21 @@ import SmallRecipe from './SmallRecipe'
 
 import recipes from './recipes'
 
-const PreviewRecipes = () => {
-    return (
+const PreviewRecipes = ({match}) => {
+    
+       return (
+        
         <ul className="flex-row-recipe">
             {
-                recipes.map(({name, date, image, id})=>(
+                recipes.filter((item)=>(item.type===match.path.substring(1))).map(({name, date, image, id})=>(
                     <SmallRecipe 
                         name={name}
                         date={date}
                         image={image}
                         key={id}
+                        id={id}
+                        match={match}
+                        
                     />
                 ))
             }
