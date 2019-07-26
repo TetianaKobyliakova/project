@@ -1,13 +1,15 @@
 import React from 'react'
 import recipes from '../PreviewRecipes/recipes'
 import './Recipe.css'
+import SmallRecipeAside from './SmallRecipeAside'
 const Recipe = ({match}) => {
     const recipeId = match.params.id
     const recipesMap=recipes.reduce((accObj, recipe)=>({
         ...accObj,
         [recipe.id]: recipe
     }), {})
-    console.log(recipesMap[recipeId].steps)
+
+    window.scrollTo(0, 0);
     return(
         <main>
             <h1>{recipesMap[recipeId].name}</h1>
@@ -71,6 +73,25 @@ const Recipe = ({match}) => {
             </div>
             <div class="col-26">
 					<h2>Вам може сподобатись</h2>
+                    
+                    {
+                    recipes.filter((item)=>(item.type===recipesMap[recipeId].type && item.id !==recipesMap[recipeId].id))
+                    .sort((a, b)=>(Math.random()-0.5))
+                    .slice(0,3)
+                    .map(({name, date, image, id})=>(
+                    <SmallRecipeAside 
+                        name={name}
+                        date={date}
+                        image={image}
+                        key={id}
+                        id={id}
+                        match={match}
+                        
+                        
+                    />
+                ))
+                    }
+                    
             </div>
             </div>
         </main>

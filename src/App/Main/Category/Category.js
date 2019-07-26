@@ -3,6 +3,7 @@ import "./Category.css"
 import categories from "./categories"
 
 const Category = ({type}) => {
+	window.scrollTo(0, 0);
     return(
         <div className="category">
 				<h1>{categories[type].title}</h1>

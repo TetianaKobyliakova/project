@@ -5,6 +5,7 @@ import SmallRecipe from './SmallRecipe'
 import recipes from './recipes'
 
 const PreviewRecipes = ({match}) => {
+    window.scrollTo(0, 0);
     
        return (
         
