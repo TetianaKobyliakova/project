@@ -14,7 +14,7 @@ const Menu = () => {
 					<li><Link to="/baking">Випічка</Link></li>
 					<li><Link to="/desserts">Десерти</Link></li>
 					<li><Link to="/drinks">Напої</Link></li>
-					<li><Link to="/sauces">Соуси</Link></li>
+					<li><Link to="/liked">Улюблене</Link></li>
 				</ul>
 		</div>
 	</nav>

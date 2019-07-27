@@ -18,28 +18,28 @@ const Recipe = ({match}) => {
             </div>
 
 
-            <div class="flex-container">
-            <div class="col-74">
-            <div class="icons">
-						<div class="icon-block">
-							<div class="icon-1"></div>
-							<div class="description">
-								<p class="small">Рецепт на:</p>
-								<p class="large">{recipesMap[recipeId].people}</p>
+            <div className="flex-container">
+            <div className="col-74">
+            <div className="icons">
+						<div className="icon-block">
+							<div className="icon-1"></div>
+							<div className="description">
+								<p className="small">Рецепт на:</p>
+								<p className="large">{recipesMap[recipeId].people}</p>
 							</div>
 						</div>
-						<div class="icon-block">
-							<div class="icon-2"></div>
-							<div class="description">
-								<p class="small">Підготовка:</p>
-								<p class="large">{recipesMap[recipeId].preparation}</p>
+						<div className="icon-block">
+							<div className="icon-2"></div>
+							<div className="description">
+								<p className="small">Підготовка:</p>
+								<p className="large">{recipesMap[recipeId].preparation}</p>
 							</div>
 						</div>
-						<div class="icon-block">
-							<div class="icon-3"></div>
-							<div class="description">
-								<p class="small">Час приготування:</p>
-								<p class="large">{recipesMap[recipeId].time}</p>
+						<div className="icon-block">
+							<div className="icon-3"></div>
+							<div className="description">
+								<p className="small">Час приготування:</p>
+								<p className="large">{recipesMap[recipeId].time}</p>
 							</div>
 						</div>
 					</div>
@@ -49,8 +49,8 @@ const Recipe = ({match}) => {
                     <h2 className="ingred">Інгредієнти</h2>
                     <ul>
                         {
-                            recipesMap[recipeId].ingredients.map((item)=>(
-                                <li>{item}</li>
+                            recipesMap[recipeId].ingredients.map((item, index)=>(
+                                <li key={index}>{item}</li>
                             ))
                         }
                     </ul>
@@ -60,7 +60,7 @@ const Recipe = ({match}) => {
                 {
                     
                     Object.keys(recipesMap[recipeId].steps).map((step, i)=>(
-                        <div className="step"> 
+                        <div className="step" key={i}> 
                             
                             <p><span>{i+1}. </span>{recipesMap[recipeId].steps[step]}</p> 
                         </div>
@@ -71,7 +71,7 @@ const Recipe = ({match}) => {
                 
             </div>
             </div>
-            <div class="col-26">
+            <div className="col-26">
 					<h2>Вам може сподобатись</h2>
                     
                     {
