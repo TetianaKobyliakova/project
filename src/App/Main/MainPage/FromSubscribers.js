@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const FromSubscribers = () => {
     return(
         <div>
-            <h2 class="new-title">Рецепти від дописувачів</h2>
+            <h2 className="new-title">Рецепти від дописувачів</h2>
             <hr/>
             <ul className="flex-row-recipe">
                 {

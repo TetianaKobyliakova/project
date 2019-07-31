@@ -6,8 +6,7 @@ import recipes from './recipes'
 
 const PreviewRecipes = (props) => {
     
-    console.log(props)
-    
+        
        return (
         
         <ul className="flex-row-recipe">

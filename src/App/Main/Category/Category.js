@@ -2,7 +2,8 @@ import React from 'react'
 import "./Category.css"
 import categories from "./categories"
 
-const Category = ({type}) => {
+const Category = ({match}) => {
+const type = match.path.substring(1)
 	
     return(
         <div className="category">

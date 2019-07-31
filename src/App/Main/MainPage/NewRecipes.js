@@ -10,45 +10,44 @@ const NewRecipes = () => {
     .sort((a, b)=>(Math.random()-0.5))
     .slice(0,5)
 
-    console.log(newRecipes);
-    return(
+        return(
         <div>
             <h2 className="new-title">Нові рецепти</h2>
             <hr/>
-            <div class="flex-container-new">
-				<div class="col-23">
+            <div className="flex-container-new">
+				<div className="col-23">
                  {newRecipes.slice(0,2).map((recipe)=>(
-                    <div class="recipe-new">
+                    <div className="recipe-new" key={recipe.id}>
 						
 							<img src={recipe.image} alt=""/>
-							<h6 class="date">{recipe.date}</h6>
-							<Link to={`${recipe.type}/${recipe.id}`}><h3 class="title">{recipe.name}</h3></Link>
+							<h6 className="date">{recipe.date}</h6>
+							<Link to={`${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
 						
 					</div>
                  ))} 
 					
 					
 				</div>
-				<div class="col-49">
+				<div className="col-49">
                 {newRecipes.slice(2,3).map((recipe)=>(
-                    <div class="recipe-new">
+                    <div className="recipe-new" key={recipe.id}>
 						
 							<img src={recipe.image} alt=""/>
-							<h6 class="date">{recipe.date}</h6>
-							<Link to={`${recipe.type}/${recipe.id}`}><h3 class="title">{recipe.name}</h3></Link>
+							<h6 className="date">{recipe.date}</h6>
+							<Link to={`${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
                             <p>{recipe.description}</p>
 						
 					</div>
                  ))}
 					
 				</div>
-				<div class="col-23">
+				<div className="col-23">
                 {newRecipes.slice(3,5).map((recipe)=>(
-                    <div class="recipe-new">
+                    <div className="recipe-new" key={recipe.id}>
 						
 							<img src={recipe.image} alt=""/>
-							<h6 class="date">{recipe.date}</h6>
-							<Link to={`${recipe.type}/${recipe.id}`}><h3 class="title">{recipe.name}</h3></Link>
+							<h6 className="date">{recipe.date}</h6>
+							<Link to={`${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
 						
 					</div>
                  ))}
