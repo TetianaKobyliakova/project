@@ -3,7 +3,8 @@
 	background-color: #ffeafe;
     margin-bottom: 48px;
     margin-right: 1%;
-    margin-left: 1%;
+	margin-left: 1%;
+	position: relative;
 	
 	
 }
@@ -35,6 +36,19 @@
 }
 img {
     width: 100%;
+}
+
+button {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	background: transparent;
+	border-style: none;
+	outline: none;
+}
+.like {
+	
+	font-size: 30px;
 }
 
 @media(max-width: 768px) {

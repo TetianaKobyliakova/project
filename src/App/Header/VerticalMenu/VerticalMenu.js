@@ -1,5 +1,6 @@
 import React from 'react'
 import './VerticalMenu.css'
+import {Link} from 'react-router-dom'
 
 const VerticalMenu = () => {
     return(
@@ -8,14 +9,14 @@ const VerticalMenu = () => {
                 <input type="checkbox" id="hamburger"/>
                 
             <ul>
-                <li><a href="#">Закуски</a></li>
-                <li><a href="#">Салати</a></li>
-                <li><a href="#">Супи</a></li>
-                <li><a href="#">Основні страви</a></li>
-                <li><a href="#">Випічка</a></li>
-                <li><a href="#">Десерти</a></li>
-                <li><a href="#">Напої</a></li>
-                <li><a href="#">Соуси</a></li>
+                <li><Link to="/appetizers">Закуски</Link></li>
+                <li><Link to="/salads">Салати</Link></li>
+                <li><Link to="/soups">Супи</Link></li>
+                <li><Link to="/main-courses">Головні страви</Link></li>
+                <li><Link to="/baking">Випічка</Link></li>
+                <li><Link to="/desserts">Десерти</Link></li>
+                <li><Link to="/drinks">Напої</Link></li>
+                <li><Link to="/liked">Улюблене</Link></li>
             </ul>
 		</nav>
     )

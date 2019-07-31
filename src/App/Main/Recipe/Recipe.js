@@ -45,6 +45,8 @@ const Recipe = ({match}) => {
 					</div>
 
             <div className="container-for-recipe">
+                <h2>Опис</h2>
+                <p>{recipesMap[recipeId].description}</p>
                 <div className="ingredients">
                     <h2 className="ingred">Інгредієнти</h2>
                     <ul>

@@ -1,19 +1,18 @@
 import React from 'react'
 import recipes from './recipes'
+import {getRecipesMap} from './recipes'
 import {Link} from 'react-router-dom'
+import {keys} from 'lodash'
 
 const Liked=({likeRecipesState})=>{
-    const recipesMap=recipes.reduce((accObj, recipe)=>({
-        ...accObj,
-        [recipe.id]: recipe
-    }), {})
+    const recipesMap=getRecipesMap(recipes)
     return(
         <div>
             <h1>Улюблене</h1>
             <ul className="flex-row-recipe">
 
                 {
-                    Object.keys(likeRecipesState).filter((key)=> likeRecipesState[key])
+                    keys(likeRecipesState).filter((key)=> likeRecipesState[key])
                     .map((key)=>(
                         <li className="recipe" key={key}>
                         <img src={recipesMap[key].image} alt=""/>

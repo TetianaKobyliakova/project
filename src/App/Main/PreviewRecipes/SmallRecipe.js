@@ -28,7 +28,7 @@ class SmallRecipe extends Component {
 								<h3 className="title">{name}</h3>
 							</Link>
 							<button onClick={()=>this.likeChange(id)}>
-								{isLiked?<span>&#9829;</span>:<span>&#9825;</span>}
+								{isLiked?<span className="like">&#9829;</span>:<span className="like">&#9825;</span>}
 							</button>
 						
 					</li>
