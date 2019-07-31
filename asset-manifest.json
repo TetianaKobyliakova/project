@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/project/static/css/main.05c369ed.chunk.css",
+    "main.js": "/project/static/js/main.b4d4f2a0.chunk.js",
+    "main.js.map": "/project/static/js/main.b4d4f2a0.chunk.js.map",
+    "runtime~main.js": "/project/static/js/runtime~main.4b9e7fa5.js",
+    "runtime~main.js.map": "/project/static/js/runtime~main.4b9e7fa5.js.map",
+    "static/js/2.1f1d23f9.chunk.js": "/project/static/js/2.1f1d23f9.chunk.js",
+    "static/js/2.1f1d23f9.chunk.js.map": "/project/static/js/2.1f1d23f9.chunk.js.map",
+    "index.html": "/project/index.html",
+    "precache-manifest.d396a5ce328a19196312645675355fd3.js": "/project/precache-manifest.d396a5ce328a19196312645675355fd3.js",
+    "service-worker.js": "/project/service-worker.js",
+    "static/css/main.05c369ed.chunk.css.map": "/project/static/css/main.05c369ed.chunk.css.map",
+    "static/media/VerticalMenu.css": "/project/static/media/hamburger.92442baf.png",
+    "static/media/logo.png": "/project/static/media/logo.ad1f5c9f.png"
+  }
+}
