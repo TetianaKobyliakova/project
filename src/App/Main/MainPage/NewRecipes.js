@@ -19,7 +19,7 @@ const NewRecipes = () => {
                  {newRecipes.slice(0,2).map((recipe)=>(
                     <div className="recipe-new" key={recipe.id}>
 						
-							<img src={recipe.image} alt=""/>
+							<img src={require(`../../../images/${recipe.image}`)} alt=""/>
 							<h6 className="date">{recipe.date}</h6>
 							<Link to={`${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
 						
@@ -32,7 +32,7 @@ const NewRecipes = () => {
                 {newRecipes.slice(2,3).map((recipe)=>(
                     <div className="recipe-new" key={recipe.id}>
 						
-							<img src={recipe.image} alt=""/>
+							<img src={require(`../../../images/${recipe.image}`)} alt=""/>
 							<h6 className="date">{recipe.date}</h6>
 							<Link to={`${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
                             <p>{recipe.description}</p>
@@ -45,7 +45,7 @@ const NewRecipes = () => {
                 {newRecipes.slice(3,5).map((recipe)=>(
                     <div className="recipe-new" key={recipe.id}>
 						
-							<img src={recipe.image} alt=""/>
+							<img src={require(`../../../images/${recipe.image}`)} alt=""/>
 							<h6 className="date">{recipe.date}</h6>
 							<Link to={`${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
 						

@@ -11,7 +11,7 @@ const FromSubscribers = () => {
                 {
                     recipes.filter((recipe)=>recipe.fromSubscribers).map((recipe)=>(
                         <li className="recipe" key={recipe.id}>
-                        <img src={recipe.image} alt=""/>
+                        <img src={require(`../../../images/${recipe.image}`)} alt=""/>
 							<h6 className="date">{recipe.date}</h6>
                             <Link to={`/${recipe.type}/${recipe.id}`}>
 								<h3 className="title">{recipe.name}</h3>

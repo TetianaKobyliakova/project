@@ -19,10 +19,11 @@ class SmallRecipe extends Component {
 		const {
 			name, date, image, match, id, isLiked
 		}=this.props
+		const img = image
 		return (
 			<li className="recipe">
 						
-							<img src={image} alt=""/>
+							<img src={require(`../../../images/${img}`)} alt=""/>
 							<h6 className="date">{date}</h6>
 							<Link to={`${match.url}/${id}`}>
 								<h3 className="title">{name}</h3>

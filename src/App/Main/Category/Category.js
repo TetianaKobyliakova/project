@@ -4,6 +4,7 @@ import categories from "./categories"
 
 const Category = ({match}) => {
 const type = match.path.substring(1)
+const img = categories[type].image
 	
     return(
         <div className="category">
@@ -15,7 +16,7 @@ const type = match.path.substring(1)
 						
 					</div>
 					<div className="image-for-description">
-						<img src={categories[type].image} alt=""/>
+						<img src={require(`../../../images/${img}`)} alt=""/>
 					</div>
 				</div>
 		</div>

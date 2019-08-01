@@ -12,6 +12,7 @@ const Main = ({addLike, removeLike, likeRecipesState}) => {
     return (
     <main>
 		<div className="container">
+        
             <Route path = "/" exact component={MainPage}/>
 
             <Route path="/appetizers" exact  component={Category}/>
@@ -57,7 +58,7 @@ const Main = ({addLike, removeLike, likeRecipesState}) => {
             <Route path="/drinks/:id"  component={Recipe}/>
 
             <Route path="/liked" render={() => <Liked likeRecipesState={likeRecipesState}/>}/>
-            
+        
         
         </div>
     </main>

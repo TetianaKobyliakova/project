@@ -14,7 +14,7 @@ const Recipe = ({match}) => {
         <main>
             <h1>{recipesMap[recipeId].name}</h1>
             <div className="main-image">
-                <img className="main-image" src={recipesMap[recipeId].image}alt=""/>
+                <img className="main-image" src={require(`../../../images/${recipesMap[recipeId].image}`)}alt=""/>
             </div>
 
 
