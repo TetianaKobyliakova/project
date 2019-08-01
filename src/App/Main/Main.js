@@ -13,51 +13,51 @@ const Main = ({addLike, removeLike, likeRecipesState}) => {
     <main>
 		<div className="container">
         
-            <Route path = "/" exact component={MainPage}/>
+            <Route path = "/project" exact component={MainPage}/>
 
-            <Route path="/appetizers" exact  component={Category}/>
-            <Route path="/appetizers"  exact render={(props) => <PreviewRecipes addLike={addLike}
+            <Route path="/project/appetizers" exact  component={Category}/>
+            <Route path="/project/appetizers"  exact render={(props) => <PreviewRecipes addLike={addLike}
             removeLike={removeLike}
             likeRecipesState={likeRecipesState} {...props}/>}/>
-            <Route path="/appetizers/:id"  component={Recipe}/>
+            <Route path="/project/appetizers/:id"  component={Recipe}/>
 
-            <Route path="/salads" exact component={Category}/>
-            <Route path="/salads"  exact render={(props) => <PreviewRecipes addLike={addLike}
+            <Route path="/project/salads" exact component={Category}/>
+            <Route path="/project/salads"  exact render={(props) => <PreviewRecipes addLike={addLike}
             removeLike={removeLike}
             likeRecipesState={likeRecipesState} {...props}/>}/>
-            <Route path="/salads/:id"  component={Recipe}/>
+            <Route path="/project/salads/:id"  component={Recipe}/>
 
-            <Route path="/soups" exact component={Category}/>
-            <Route path="/soups"  exact render={(props) => <PreviewRecipes addLike={addLike}
+            <Route path="/project/soups" exact component={Category}/>
+            <Route path="/project/soups"  exact render={(props) => <PreviewRecipes addLike={addLike}
             removeLike={removeLike}
             likeRecipesState={likeRecipesState} {...props}/>}/>
-            <Route path="/soups/:id"  component={Recipe}/>
+            <Route path="/project/soups/:id"  component={Recipe}/>
 
-            <Route path="/main-courses" exact component={Category}/>
-            <Route path="/main-courses"  exact render={(props) => <PreviewRecipes addLike={addLike}
+            <Route path="/project/main-courses" exact component={Category}/>
+            <Route path="/project/main-courses"  exact render={(props) => <PreviewRecipes addLike={addLike}
             removeLike={removeLike}
             likeRecipesState={likeRecipesState} {...props}/>}/>
-            <Route path="/main-courses/:id"  component={Recipe}/>
+            <Route path="/project/main-courses/:id"  component={Recipe}/>
 
-            <Route path="/bakery" exact component={Category}/>
-            <Route path="/bakery"  exact render={(props) => <PreviewRecipes addLike={addLike}
+            <Route path="/project/bakery" exact component={Category}/>
+            <Route path="/project/bakery"  exact render={(props) => <PreviewRecipes addLike={addLike}
             removeLike={removeLike}
             likeRecipesState={likeRecipesState} {...props}/>}/>
-            <Route path="/bakery/:id"  component={Recipe}/>
+            <Route path="/project/bakery/:id"  component={Recipe}/>
             
-            <Route path="/desserts" exact component={Category}/>
-            <Route path="/desserts"  exact render={(props) => <PreviewRecipes addLike={addLike}
+            <Route path="/project/desserts" exact component={Category}/>
+            <Route path="/project/desserts"  exact render={(props) => <PreviewRecipes addLike={addLike}
             removeLike={removeLike}
             likeRecipesState={likeRecipesState} {...props}/>}/>
-            <Route path="/desserts/:id"  component={Recipe}/>
+            <Route path="/project/desserts/:id"  component={Recipe}/>
 
-            <Route path="/drinks" exact component={Category}/>
-            <Route path="/drinks"  exact render={(props) => <PreviewRecipes addLike={addLike}
+            <Route path="/project/drinks" exact component={Category}/>
+            <Route path="/project/drinks"  exact render={(props) => <PreviewRecipes addLike={addLike}
             removeLike={removeLike}
             likeRecipesState={likeRecipesState} {...props}/>}/>
-            <Route path="/drinks/:id"  component={Recipe}/>
+            <Route path="/project/drinks/:id"  component={Recipe}/>
 
-            <Route path="/liked" render={() => <Liked likeRecipesState={likeRecipesState}/>}/>
+            <Route path="/project/liked" render={() => <Liked likeRecipesState={likeRecipesState}/>}/>
         
         
         </div>

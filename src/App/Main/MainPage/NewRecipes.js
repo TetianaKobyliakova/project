@@ -21,7 +21,7 @@ const NewRecipes = () => {
 						
 							<img src={require(`../../../images/${recipe.image}`)} alt=""/>
 							<h6 className="date">{recipe.date}</h6>
-							<Link to={`${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
+							<Link to={`/project/${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
 						
 					</div>
                  ))} 
@@ -34,7 +34,7 @@ const NewRecipes = () => {
 						
 							<img src={require(`../../../images/${recipe.image}`)} alt=""/>
 							<h6 className="date">{recipe.date}</h6>
-							<Link to={`${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
+							<Link to={`/project/${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
                             <p>{recipe.description}</p>
 						
 					</div>
@@ -47,7 +47,7 @@ const NewRecipes = () => {
 						
 							<img src={require(`../../../images/${recipe.image}`)} alt=""/>
 							<h6 className="date">{recipe.date}</h6>
-							<Link to={`${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
+							<Link to={`/project/${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
 						
 					</div>
                  ))}

@@ -11,7 +11,7 @@ const PreviewRecipes = (props) => {
         
         <ul className="flex-row-recipe">
             {
-                recipes.filter((item)=>(item.type===props.match.path.substring(1))).map(({name, date, image, id})=>(
+                recipes.filter((item)=>(item.type===props.match.path.substring(9))).map(({name, date, image, id})=>(
                     <SmallRecipe 
                         name={name}
                         date={date}

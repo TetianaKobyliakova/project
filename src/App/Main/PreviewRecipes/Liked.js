@@ -17,7 +17,7 @@ const Liked=({likeRecipesState})=>{
                         <li className="recipe" key={key}>
                         <img src={require(`../../../images/${recipesMap[key].image}`)} alt=""/>
 							<h6 className="date">{recipesMap[key].date}</h6>
-                            <Link to={`/${recipesMap[key].type}/${key}`}>
+                            <Link to={`/project/${recipesMap[key].type}/${key}`}>
 								<h3 className="title">{recipesMap[key].name}</h3>
                             </Link>
                         </li>

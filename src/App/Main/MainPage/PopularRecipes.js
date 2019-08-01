@@ -18,7 +18,7 @@ const PopularRecipes = () => {
                         popularRecipes.map((recipe)=>(
                             <li key = {recipe.id}>
                                 <div><img src={require(`../../../images/${recipe.roundImage}`)} alt=""/></div>
-						        <Link to={`${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
+						        <Link to={`/project/${recipe.type}/${recipe.id}`}><h3 className="title">{recipe.name}</h3></Link>
                             </li>
                         ))
                     }

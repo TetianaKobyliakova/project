@@ -13,7 +13,7 @@ const FromSubscribers = () => {
                         <li className="recipe" key={recipe.id}>
                         <img src={require(`../../../images/${recipe.image}`)} alt=""/>
 							<h6 className="date">{recipe.date}</h6>
-                            <Link to={`/${recipe.type}/${recipe.id}`}>
+                            <Link to={`/project/${recipe.type}/${recipe.id}`}>
 								<h3 className="title">{recipe.name}</h3>
                             </Link>
                         </li>

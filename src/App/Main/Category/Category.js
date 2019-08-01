@@ -3,7 +3,8 @@ import "./Category.css"
 import categories from "./categories"
 
 const Category = ({match}) => {
-const type = match.path.substring(1)
+const type = match.path.substring(9)
+
 const img = categories[type].image
 	
     return(
